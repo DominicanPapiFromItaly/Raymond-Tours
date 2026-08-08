@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raymond Tours – Dominican Beach Escapes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="mainNav">
+  <div class="nav-logo">
+    <img src="assets/Logo.png" alt="Raymond Tours Logo">
+  </div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#packages">Tours</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+ <div class="lang-switcher">
+      
+      <a href="indexEN.html">
+        <img src="assets/gb.png" alt="Italiano" class="lang-flag">
+      </a>
+      <span class="lang-arrow"></span>
+      <div class="lang-dropdown">
+        <a href="index.html">
+          <img src="assets/es.avif" alt="English" class="lang-flag">
+        </a>
+        <a href="indexFR.html">
+          <img src="assets/fr.webp" alt="English" class="lang-flag">
+        </a>
+      </div>
+    </div>
+
+  <div class="nav-actions">
+    <div class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-menu-close" onclick="toggleMobile()">✕</span>
+  <a href="#hero" onclick="toggleMobile()">Home</a>
+  <a href="#packages" onclick="toggleMobile()">Tours</a>
+  <a href="#testimonials" onclick="toggleMobile()">Reviews</a>
+  <a href="#contact" onclick="toggleMobile()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-location"><span class="hero-dot"></span> Paradise in the Dominican Republic</div>
+    <h1 class="hero-title">Discover Caribbean<br>beaches with <span>Raymond Tours.</span></h1>
+    <p class="hero-sub">From Punta Cana to Samaná, enjoy curated beach escapes with crystal-clear waters and unforgettable sunsets.</p>
+    <div class="hero-cta">
+      <button class="btn-primary" onclick="document.getElementById('packages').scrollIntoView({behavior:'smooth'})">Browse Beach Packages</button>
+      
+      <button class="btn-outline" onclick="location.href='#CONTATTI'">
+        Start Your Journey →
+      </button>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-badge"><span class="trust-icon">🏝️</span> 5,000+ Beach Lovers</div>
+      <div class="trust-badge"><span class="trust-icon">🔒</span> Secure Booking</div>
+      <div class="trust-badge"><span class="trust-icon">⭐</span> 4.4 / 5 Rating</div>
+    </div>
+  </div>
+  <div class="hero-counter">01 / 06</div>
+  <div class="hero-scroll"><div class="scroll-line"></div></div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item"><div class="stat-num">10K+</div><div class="stat-label">Happy Travelers</div></div>
+    <div class="stat-item"><div class="stat-num">10+</div><div class="stat-label">Destinations</div></div>
+    <div class="stat-item"><div class="stat-num">98%</div><div class="stat-label">Satisfaction Rate</div></div>
+    <div class="stat-item"><div class="stat-num">25+</div><div class="stat-label">Years of Experience</div></div>
+  </div>
+</section>
+
+<!-- DESTINATIONS MARQUEE -->
+<section id="destinations">
+  <div class="marquee-track">
+    <div class="marquee-item">El Limón Waterfall</div>
+    <div class="marquee-item">Las Terrenas (Punta Popi Beach)</div>
+    <div class="marquee-item">Cayo Levantado</div>
+    <div class="marquee-item">Los Haitises National Park</div>
+    <div class="marquee-item">Whale Watching</div>
+    <div class="marquee-item">Rincón Beach</div>
+    <div class="marquee-item">Caño Frío</div>
+    <div class="marquee-item">Frontón Beach</div>
+    <div class="marquee-item">Las Galeras</div>
+    <div class="marquee-item">Madama Beach</div>
+    <div class="marquee-item">Hermitanos Beach</div>
+    <div class="marquee-item">El Valle Beach</div>
+    <div class="marquee-item">Buggy Tours</div>
+    <div class="marquee-item">ATV (4-Wheel)</div>
+    <div class="marquee-item">Zipline in El Valle</div>
+
+    <!-- Duplicate for seamless loop -->
+    <div class="marquee-item">El Limón Waterfall</div>
+    <div class="marquee-item">Las Terrenas (Punta Popi Beach)</div>
+    <div class="marquee-item">Cayo Levantado</div>
+    <div class="marquee-item">Los Haitises National Park</div>
+    <div class="marquee-item">Whale Watching</div>
+    <div class="marquee-item">Rincón Beach</div>
+    <div class="marquee-item">Caño Frío</div>
+    <div class="marquee-item">Frontón Beach</div>
+    <div class="marquee-item">Las Galeras</div>
+    <div class="marquee-item">Madama Beach</div>
+    <div class="marquee-item">Hermitanos Beach</div>
+    <div class="marquee-item">El Valle Beach</div>
+    <div class="marquee-item">Buggy Tours</div>
+    <div class="marquee-item">ATV (4-Wheel)</div>
+    <div class="marquee-item">Zipline in El Valle</div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <div class="section-header">
+    <div>
+      <div class="section-label">Curated Escapes</div>
+      <h2 class="section-title">Featured Travel Packages</h2>
+      <p class="section-sub">Hand-picked experiences that combine comfort, culture, and unforgettable moments.</p>
+    </div>
+  </div>
+  <div class="packages-grid" id="packagesGrid">
+    <!-- Packages rendered by JS -->
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-label">What Travelers Say</div>
+  <h2 class="section-title">Real Experiences, Real People</h2>
+  <div class="testimonials-grid">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Thoughtful and honest tour guide in Samana. Raymond arranged transport and our tour to Park Nacional. We had a nice time. He was flexible and great to work with. We look forward to calling Raymond again during our next trip."</p>
+      <div class="testi-author">
+        <img class="testi-avatar" src="assets/AVATAR1.jpg" alt="Sofia"/>
+        <div><div class="testi-name">Rameez Ray T</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Nice guy. Best prices (50% of Transat). We loved our excursion to the Los Haitises Park and Cayo Levantado. We thought he was taking credit card, but in fact, he brought us to an ATM machine in Samana after the ride. I was very surprised to discover that Scotiabank has a branch in Samana! Nevertheless, make sure to confirm the payment method prior to the excursion departure. Paying in cash (pesos or USD) is strongly recommended."</p>
+      <div class="testi-author">
+        <img class="testi-avatar" src="assets/AVATAR2.jpg" alt="James"/>
+        <div><div class="testi-name">Sebastien G.</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Very nice people. Have the best prices for a trip ...
+
+The guides are amazing. We had an option to choose trips from hotel and trips from Raymond, and we love more with Raymond.
+
+With Raymond you have better possibility to see the local people, to get closer to them ...
+
+The security is amazing, don't have to fear of anything ..."</p>
+      <div class="testi-author">
+        <img class="testi-avatar" src="assets/AVATAR3.jpg" alt="Priya"/>
+        <div><div class="testi-name">Yevhenii M</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-wrapper" id="CONTACT">
+
+  <!-- LEFT COLUMN: CONTACT INFO -->
+  <div class="contact-info">
+
+    <h2>Contact Information</h2>
+
+    <div class="info-block">
+      <div>
+      </div>
+    </div>
+
+    <div class="info-block">
+      <i class="fas fa-phone"></i>
+      <a href="tel:+18094920957" target="_blank">+1 (809) 492-0957</a>
+    </div>
+
+    <div class="info-block">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:raymondtourssamana@gmail.com" target="_blank">
+         raymondtourssamana@gmail.com
+      </a>
+    </div>
+
+    <!-- SOCIAL LOGOS -->
+    <div class="social-icons">
+      <a href="https://wa.me/18095467216" target="_blank">
+        <img src="assets/whatsapp-logo.png" alt="WhatsApp">
+      </a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=raymondtourssamana@gmail.com" target="_blank">
+        <img src="assets/gmail.png" alt="Gmail" class="icon">
+      </a>
+      <a href="https://www.tripadvisor.com/Attraction_Review-g811253-d10185334-Reviews-Raymond_Tours_Samana-Santa_Barbara_de_Samana_Samana_Province_Dominican_Republic.html" target="_blank">
+        <img src="assets/TripAdvisor.png" alt="TripAdvisor">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- CONTACT FORM -->
+  <div class="contact-form premium" id="CONTACT-FORM">
+    <h2>Request Information</h2>
+
+    <form id="contactForm" 
+          action="mailto:raymondtourssamana@gmail.com?subject=Information%20Request%20from%20Website" 
+          method="POST" 
+          enctype="text/plain">
+
+      <div class="form-row">
+        <div class="form-field">
+          <input type="text" name="Full Name" required>
+          <label>Full Name</label>
+          <i class="fas fa-user"></i>
+        </div>
+
+        <div class="form-field">
+          <input type="email" name="Email" required>
+          <label>Email Address</label>
+          <i class="fas fa-envelope"></i>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <input type="text" name="Phone" required>
+          <label>Phone</label>
+          <i class="fas fa-phone"></i>
+        </div>
+
+        <div class="form-field">
+          <input type="text" name="Service">
+          <label>Service (optional)</label>
+          <i class="fas fa-building"></i>
+        </div>
+      </div>
+
+      <div class="form-field textarea-field">
+        <textarea name="Message" required></textarea>
+        <label>Message</label>
+        <i class="fas fa-comment"></i>
+      </div>
+
+      <button type="submit" class="premium-btn">Send Request</button>
+    </form>
+
+    <p id="thankyou" class="thankyou-message">
+      Thank you for contacting us.  
+      Your request has been successfully received.  
+      A Raymond Tours representative will get back to you as soon as possible.
+    </p>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand"> 
+        <img src="assets/Logo.png" alt="Raymond Tours Logo"> 
+      </div>
+      <p class="footer-desc">
+        Descubriendo la belleza de Samaná con experiencias auténticas desde 2010.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#">Excursiones a El Limón</a></li>
+        <li><a href="#">Tours a las playas de Samaná</a></li>
+        <li><a href="#">Transporte privado</a></li>
+        <li><a href="#">Tours grupales</a></li>
+        <li><a href="#">Itinerarios personalizados</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Compañía</h4>
+      <ul>
+        <li><a href="#">Sobre nosotros</a></li>
+        <li><a href="#">Cómo trabajamos</a></li>
+        <li><a href="#">Carreras</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Prensa</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Soporte</h4>
+      <ul>
+        <li><a href="#">Centro de ayuda</a></li>
+        <li><a href="#">Política de reservas</a></li>
+        <li><a href="#">Cancelaciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="https://wa.me/18094920957?text=Hola%20Raymond%20Tours,%20quiero%20hablar%20de%20un%20problema." target="_blank">Contáctanos</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Raymond Tours. Todos los derechos reservados.</span>
+  </div>
+</footer>
+
+<script src="js/appEN.js"></script>
+<script src="js/contactForm.js"></script>
+</body>
+</html>
